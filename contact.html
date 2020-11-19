@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Hide Salon</title>
+  <link rel="stylesheet" href="style.css" type="text/css"media="screen">
+    <!--responsive-->
+    <link rel="stylesheet" href="responsive.css" type="text/css"media="screen">
+
+
+</head>
+
+<body>
+    <!--wrapper　ここから-->  
+  <div id="wrapper">
+
+    <!--header　ここから-->  
+    <header>
+      <h1>Web制作のご依頼なら<br>
+        <span>Hide Salon</span>
+        </h1>
+  
+      <nav>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー一覧</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+
+      </nav>
+      <div id="clear"></div>
+
+
+    </header>
+    <!--header　ここまで-->  
+
+    <!--#中見出し　ここから-->  
+    <h2 id="heading" class="box-shadow">
+      お問い合わせ
+    </h2>
+    <!--#中見出し　ここまで-->  
+
+    <!--#left　ここから-->  
+    <div id="left" class="box-shadow">
+      <h3>ご予約・お問い合わせフォーム</h3>
+      <p id="contact_text">書きお問い合わせフォームよりご希望の日時、ご予約内容をお知らせください。<br>
+      お問い合わせの場合、【お客様御要望欄】に記入して送信してください。</p>
+
+      <form class="mailForm" action="mail.php" method="POST">
+        <table>
+          <tr>
+              <td class="form_title">
+                <label for="form_name">お名前</label>
+              </td>
+              <td class="form_contents">
+                <input type="text" required="required"  id="form_name">
+              </td>
+          </tr>
+
+          <tr>
+            <td class="form_title">
+              <label for="form_tel">お電話番号</label>
+            </td>
+            <td class="form_contents">
+              <input type="text" required="required" id="form_tel">
+            </td>
+        </tr>
+        <tr>
+          <td class="form_title">
+            <label for="form_mail">メールアドレス</label>
+          </td>
+          <td class="form_contents">
+            <input type="text" required="required" id="form_mail">
+          </td>
+      </tr>
+                
+            <tr>
+                <td class="form_title">
+                <label for="form_menu">ご検討メニュー</label>
+              </td>
+              <td class="form_contents">
+                <input type="checkbox" required="required" id="form_HP" value="HP制作">
+                  <label for="form_HP">HP制作</label>
+                <input type="checkbox" required="required" id="form_LP" value="LP制作">
+                  <label for="form_LP">LP制作</label><br>
+                  <input type="checkbox" required="required" id="form_WP" value="WordPress">
+                  <label for="form_WP">WordPress</label>
+                  <input type="checkbox" required="required" id="form_SEO" value="SEO対策">
+                  <label for="form_SEO">SEO対策</label>
+                  <input type="checkbox" required="required" id="form_REQ" value="問い合わせフォーム">
+                  <label for="form_REQ">問い合わせフォーム</label>
+
+              </td>
+          </tr>
+                        
+            <tr>
+                <td class="form_title">
+                <label for="form_textarea">お客様御要望欄</label>
+              </td>
+              <td class="form_contents">
+                <textarea  required="required" id="form_textarea"></textarea>
+              </td>
+          </tr>
+          <input type="hidden" id="token" name="token" value="1234567" />
+        </table>
+        <p id="submit"><input type="submit" value="送信する"></p>
+      </form>
+    </div> 
+    <!--#left　ここまで-->  
+
+    <!--#right　ここから-->  
+    <div id="right">
+      <ul>
+        <!-- <li><a id="contact" class="box-shadow" href="#">ご予約・お問い合わせ</a></li> -->
+        <li><a id="blog" class="box-shadow" href="#">ブログ</a></li>
+      </ul>
+    </div>
+    <!--#right　ここまで-->  
+
+    <div id="clear"></div>
+
+</div>
+  <!--wrapper　ここまで-->  
+
+    <!--#footer　ここから-->  
+  <footer>
+    <p>Copyright(c) 2020 Web design inc. All Right Reserved</p>
+  </footer>
+  <!--#footer　ここまで-->  
+
+
+
+
+</body>
+
+
+
+
+
+</html>

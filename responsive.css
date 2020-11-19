@@ -1,0 +1,155 @@
+
+/* ========================================
+	スマホ用
+========================================= */
+
+@media(max-width:1000px){
+  /* ========================================
+    ラッパー用　（スマホ）
+  ========================================= */
+  #wrapper{
+    width:100%;
+  }
+  /* ========================================
+    ヘッダー用　（スマホ）
+  ========================================= */
+  header{
+    width:100%;
+  }
+  header nav{
+    margin-top:0;
+  }
+  header nav ul li{
+    float:none;
+    display:flex;
+    flex-direction: column;
+  }
+  header nav ul li a{
+    line-height:20px;
+    padding:0px 10px 0px 10px;
+    border-bottom: 4px solid rgba(0,0,0,0);
+    border-left: 4px solid rgba(0,0,0,0);
+  }
+  header nav ul li:hover{
+    background:url(images/navbar.png) no-repeat;
+    background-position:-10px center;
+    height:18px;
+    display:inline-block; 
+  }
+  header nav ul li a:hover{
+    color:#345c39;
+    border-left:4px solid #345c39;
+    border-bottom: none;
+  }
+
+  /* ========================================
+    メインイメージ用　（スマホ）
+  ========================================= */
+  #mainimage,
+  #heading{
+    width:95%;
+    overflow: hidden;
+    display: flex;
+    margin:auto;
+  }
+  
+  /* ========================================
+    サイド　レフト用　（スマホ）
+  ========================================= */
+  #left{
+    width:90%;
+    display:flex;
+    float:none;
+    flex-direction: column;
+    margin:20px auto 20px auto;
+  }
+#left ul{
+  width: 100% !important;;
+}
+    #left ul li{
+    width:100%;
+  }
+/* ========================================
+    サイド　ライト用　（スマホ）
+  ========================================= */
+  #right{
+    width:90%;
+    display:flex;
+    margin:auto;
+    margin:auto 20px auto 20px;
+  }
+  #right ul{
+    margin:auto;
+  }
+
+}
+
+#left h2,
+#left h3{
+  font-size:17px;
+  color:#734339;
+  font-weight:bold;
+  border-left:5px solid #ba3009;
+  padding-left:10px;
+}
+
+#left ul{
+  overflow:scroll;
+  width:555px;
+  height:145px;
+}
+
+#left ul li {
+  font-size:13px;
+  font-weight:normal;
+  color:#927e7a;
+  border-bottom:1px dotted #d0d0d0;
+  line-height:32px;
+}
+
+#left ul li span{
+  font-size:12px;
+  font-weight:normal;
+  color:#b5b3b3;
+  margin-right:15px;
+}
+/* ========================================
+	サイド　ライト用（スマホ）
+========================================= */
+#right ul li{
+  line-height:60px;
+  margin-bottom:10px;
+}
+
+#right ul li a{
+  padding:auto auto auto 50px;
+  text-decoration: none;
+  color:#734339;
+  font-size:17px;
+  width:225px;
+  height:60px;
+  font-weight:bold;
+  padding-left:140px;
+}
+
+#right ul li a#contact{
+  background:url(images/contact1.png);
+  display:block;
+}
+#right ul li a#blog{
+  background:url(images/blog1.png);
+  display:block;
+}
+
+/* ========================================
+	メニュー表示用（スマホ）
+========================================= */
+h2#heading{
+  width:95%;
+  margin:20px auto 20px auto;
+}
+
+
+
+
+
